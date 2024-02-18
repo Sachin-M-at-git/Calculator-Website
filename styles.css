@@ -1,0 +1,193 @@
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calbody {
+    border: 2px solid black;
+    width: 25.2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    
+}
+
+#tv {
+    text-align: end;
+    font-size: 55px;
+    padding-right: 10px;
+    border: 0;
+    background-color: rgba(186, 183, 183, 0.545);
+    width: 97%;
+    height: 1.5em;
+    border-radius: 12px 12px 0px 0px;
+}
+
+#a {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #0000008c;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding-right: 10px;
+    width: 97.4%;
+    height: 2em;
+    background-color: rgb(237, 236, 236);
+}
+
+.aa {
+    color: black !important;
+    font-weight: bold;
+}
+
+#bp-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    height: 30em;
+    width: 100%;
+}
+
+#button-pad {
+    background-color: black;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(4, 5.5em);
+    grid-template-rows: repeat(5, 5.5em);
+}
+
+.button {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 13px;
+    border: 0;
+}
+
+.m-button {
+    color: white;
+    background-color: #ffffff5e;
+    border-radius: 12px;
+}
+
+.round-button {
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+.round-button:hover {
+    box-shadow: 0px 0px 10px white;
+}
+
+.symbol {
+    font-size: 2.5rem;
+}
+
+.symbol:hover {
+    color: rgb(247, 247, 81);
+}
+
+#equal {
+    background-color: rgb(11, 172, 11);
+}
+
+#equal:hover {
+    box-shadow: 0px 0px 10px rgb(3, 240, 3);
+}
+
+#ac {
+    background-color: rgb(195, 16, 16);
+}
+
+#ac:hover {
+    box-shadow: 0px 0px 10px red;
+}
+
+#c {
+    background-color: orange;
+    color: black;
+}
+
+#c:hover {
+    box-shadow: 0px 0px 10px orange;
+    color: black;
+}
+
+#l:hover {
+    box-shadow: none;
+    animation: rot 1s forwards;
+}
+
+#l {
+    animation: rrot 1.5s reverse;
+}
+
+#in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    animation: rrot_in 1.7s reverse;
+}
+
+#in:hover {
+    animation: rot_in 1.2s forwards;
+}
+
+@keyframes rot {
+    100% {
+        border-radius: 30%;
+        transform: rotate(45deg);
+    }
+}
+@keyframes rot_in {
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+@keyframes rrot {
+    100% {
+        border-radius: 30%;
+        transform: rotate(45deg);
+    }
+}
+@keyframes rrot_in {
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+@media (max-width: 768px) {
+    
+    #calbody {
+        border: 0;
+        height: 100vh;
+        width: 100%;
+    }
+    #tv {
+        height: 15.5vh;
+    }
+    #a {
+        height: 12vh;
+    }
+
+    #bp-center {
+        max-height: 72vh;
+        padding: 1px;
+    }
+
+    #button-pad {
+        padding: 0;
+    }
+}
